@@ -39,6 +39,7 @@ body {
     max-width: 1110px;
     margin: 5rem auto;
     background: var(--offWhite);
+    overflow-x: hidden;
 }
 
 p,
@@ -121,8 +122,8 @@ a {
     width: 40px;
     cursor: pointer;
     right: 1rem;
-    z-index: 998;
-    opacity: 0;;
+    z-index: 10;
+    opacity: 0;
 }
 .line1, .line2, .line3{
     position: absolute;
@@ -218,9 +219,11 @@ a {
     width: 70vw;
     box-sizing: border-box;
     padding: 0;
-    opacity: 0;
-    transform: translateX(250px);
+    opacity: 1;
+    transform: translateX(150%);
     transition: 0.5s;
+    display: none;
+   
 }
 
 .list_items_mobile .item{
@@ -229,10 +232,23 @@ a {
 .list_items_mobile .item a{
     font-size: 18px;
 }
+
+.list_items_mobile .item a:hover{
+    color:var(--softRed);
+}
+
+.title{
+    font-size: var(--xlarge);
+    font-weight: var(--xbold);
+}
+
+.image{
+}
 .show_menu{
     opacity: 1;
     transform: translateX(0);
     transition: 0.5s;
+    display: inherit;
 }
 /*....................NEWS SECTION.....................*/
 .main {
@@ -290,7 +306,6 @@ a {
     background-color: var(--veryDarkBlue);
     padding: 1.5rem 2rem;
     max-width: 350px;
-
     max-height: 510px;
 }
 
@@ -417,7 +432,7 @@ a {
     .card_blog{
         margin: auto;
     }
- 
+  
 }
 
 @media (min-width:376px) and (max-width: 668px) {
@@ -481,5 +496,5 @@ a {
         margin: auto;
         
     }
- 
+   
 }
