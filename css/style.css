@@ -317,11 +317,11 @@ a {
     font-size: var(--large);
 }
 
-.new h3 {
+.new h2 {
     color: var(--offWhite);
 }
 
-.new h3:hover {
+.new h2:hover {
     color: var(--softOrange);
     cursor: pointer;
 }
